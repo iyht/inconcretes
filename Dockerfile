@@ -1,5 +1,5 @@
 FROM 1733116199/achal-base
-RUN apt-get install -y --no-install-recommends iproute2 dnsutils
+RUN apt-get update && apt-get install -y --no-install-recommends iproute2 dnsutils
 USER pi
 EXPOSE 22
 WORKDIR /home/pi/achal
